@@ -2,7 +2,7 @@ let materias = [
     [10, 9, 10],
     [8, 5, 5],
     [7, 8, 5]
-];
+]; hfusdyfgyu
 
 function mostrarNotas(params) {
     let notaMayor = -Infinity;
