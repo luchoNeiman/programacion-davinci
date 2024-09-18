@@ -15,7 +15,7 @@ function mostrarNotas(params) {
             sumaNotas += nota;
             notaMayor = nota > notaMayor ? nota : notaMayor;
         }
-        console.log("La suma de las notas es: " + nota);
+        console.log("La suma de las notas es: " + sumaNotas);
         let promedio = sumaNotas / materia.length;
         console.log("El promedio es: " + promedio);
     }
