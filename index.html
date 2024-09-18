@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multidimensionales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="web">
+        <header>
+            <h1>Programación I - Ejercicio 02</h1>
+        </header>
+        <main>
+            <div class="consigna">
+                <h2>Consigna</h2>
+                <ul>
+                    <li>Crear e inicializar un array multidimensional para que almacene las notas que un/a estudiante
+                        obtuvo en el cuatrimestre.</li>
+                    <li>Cada fila (array) representa una materia, y cada posición almacena una de las 3 notas que obtuvo
+                        en dicha materia.</li>
+                    <li>
+                        <p>La matriz se debería de ver algo así:</p>
+                        <pre><code>notas = [
+        [4, 9, 10],   // Notas de la materia 1
+        [8, 5, 5],    // Notas de la materia 2
+        [7, 8, 5]     // Notas de la materia 3
+      ]</code></pre>
+                    </li>
+                    <li>
+                        <p>Se muestra al usuario un botón que al hacer clic debe de calcular e informar:</p>
+                        <ul>
+                            <li>El promedio de las 3 notas obtenidas en cada materia.</li>
+                            <li>La nota más alta entre todas las materias.</li>
+                        </ul>
+                    </li>
+                    <li>Punto extra 👑: Se muestra al usuario otro botón que al hacer clic debe de solicitar 3 notas
+                        (válidas del 1 al 10) y guardarla en el array de notas.</li>
+                </ul>
+            </div>
+
+            <button onclick="mostrarNotas()">Mostrar información del cuatrimestre</button>
+            <button onclick="ingresarNota()">Ingresar notas</button>
+        </main>
+        <script src="script.js"></script>
+</body>
+
+</html>
