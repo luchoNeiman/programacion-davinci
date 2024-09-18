@@ -19,7 +19,6 @@ function mostrarNotas(params) {
         let promedio = sumaNotas / materia.length;
         console.log("El promedio es: " + promedio);
     }
-    console.log("La nota más alta es: " + notaMayor);   
 }
 
 function ingresarNota(params) {
