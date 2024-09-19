@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <script type="text/javascript">
+        let notas;
+        let reprobados = 0;
+        let aprobados = 0;
+        let promocionados = 0;
+        let max = 0;
+        let min = 99999999;
+        let i = 1;
+        let promedioReprobados = 0;
+        let promedioAprobados = 0;
+        let promedioPromocionados = 0;
+        let acumuladorReprobados = 0;
+        let acumuladorAprobados = 0;
+        let acumuladorPromocionados = 0;
+
+
+        do {
+            notas = parseInt(prompt("Ingrese la nota " + i));
+
+            if (notas < 4) {
+                reprobados++;
+                acumuladorReprobados = acumuladorReprobados + notas;
+            }
+            else if (notas >= 4) {
+                aprobados++;
+                acumuladorAprobados = acumuladorAprobados + notas;
+            }
+            else if (notas >= 7) {
+                promocionados++;
+                acumuladorPromocionados = acumuladorPromocionados + notas;
+                console.log(acumuladorPromocionados);
+                aprobados++;
+                acumuladorAprobados = acumuladorAprobados + notas;
+
+            }
+
+            if (notas >= max) {
+                max = notas;
+            }
+            if (notas <= min) {
+                min = notas;
+            }
+
+            i++;    
+        } while (confirm("Quiere ingresar otra nota?"));
+        
+        promedioReprobados = acumuladorReprobados / reprobados;
+        promedioAprobados = acumuladorAprobados / aprobados;
+        promedioPromocionados = acumuladorPromocionados / promocionados;
+        document.write("Promedio reprobados: ", promedioReprobados, "<br>", "Promedio aprobados: ", promedioAprobados, "<br>", "Promedio promocionados: ", promedioPromocionados, "<br>");
+        document.write("El numero mas grande que se ingreso fue " + max + "<br>" + "El numero mas chico que se ingreso fue " + min);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

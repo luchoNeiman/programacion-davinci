@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script type="text/javascript">
+
+        function mostrarMensaje() {
+            let nombre;
+            do {
+                nombre = prompt("Ingrese un nombre");    
+            } while (!isNaN(nombre));
+            
+            document.write(nombre + "<br>");
+        }
+        
+
+
+        for (let i = 0; i < 3; i++) {
+            mostrarMensaje();            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
