@@ -41,7 +41,7 @@
 
 
 
-//RECORRER OBJETOS
+// RECORRER OBJETOS
 // const salarios = {
 //     juan : 100,
 //     'Cool Juan' : 160,
