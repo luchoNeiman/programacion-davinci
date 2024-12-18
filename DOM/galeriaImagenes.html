@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Programación I - Ejercicio 01</title>
+
+    <!-- <link rel="preload" href="../assets/fuentes/jost-vf.woff2" as="font"> -->
+    <!-- <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="stylesheet" href="../assets/estilos/main.css"> -->
+
+    <style>
+        .galeria {
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            list-style: none;
+
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+        }
+
+        dialog {
+            margin: auto;
+            text-align: center;
+            background-color: #bfbfbf;
+
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                padding: 1rem;
+            }
+
+            &::backdrop {
+                background-color: rgb(0 0 0 / 0.3);
+            }
+        }
+    </style>
+
+    <script src="galeriaImagenes.js" defer></script>
+</head>
+
+<body>
+    <div class="web">
+        <header>
+            <h1>Programación I - Ejercicio 01</h1>
+        </header>
+        <main>
+            <div class="consigna">
+                <h2>Consigna</h2>
+                <ul>
+                    <li>Se tiene una galería de tres imágenes.</li>
+                    <li>Cada vez que se hace clic en una imagen, se debe crear una ventana modal a modo de ampliación de
+                        la imagen.</li>
+                    <li>Al cerrar la modal, se debe eliminar esta del documento HTML.</li>
+                </ul>
+            </div>
+
+            <!-- Ejemplo de la estructura a generar: -->
+            <!--<dialog>
+      <img src="imagenes/IMAGEN" alt="ALT">
+      <form method="dialog">
+        <button>Cerrar</button>
+      </form>
+    </dialog>-->
+
+            <ul class="galeria">
+                <li><img src="imagenes/mascota-01.webp" alt="Mascota 01"></li>
+                <li><img src="imagenes/mascota-02.webp" alt="Mascota 02"></li>
+                <li><img src="imagenes/mascota-03.webp" alt="Mascota 03"></li>
+            </ul>
+        </main>
+        <footer>
+            <ul>
+                <li>Profesor Cristian Corbalan</li>
+                <li>
+                    <a href="mailto:cristian.corbalan@davinci.edu.ar"
+                        target="_blank">cristian.corbalan@davinci.edu.ar</a>
+                </li>
+                <li>Programación 1</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
