@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Programación I | Parcial 2 | APELLIDO, NOMBRE | APELLIDO, NOMBRE</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="parcial.js" defer></script>
+</head>
+
+<body>
+  <div id="modal"> <!--se genera dinamicamente -->
+
+  </div>
+
+  <div class="web">
+    <header>
+      <h1>Programación I | Parcial 2 | Neiman, Luciano | Diaz, Sol</h1>
+    </header>
+
+    <main>
+      <aside id="mini-carrito">
+        <p><span class="items-agregados">0</span> ítems agregados</p>
+        <p>$<span class="precio-acumulado">0</span> es el total</p>
+        <button id="ver-carrito">Ver carrito</button>
+      </aside>
+
+      <h2>Productos</h2>
+
+      <select id="filtro-categorias">
+        <option value="Todas">Todas</option>
+        <option value="Accion">Acción</option>
+        <option value="Tristeza">Tristeza</option>
+        <option value="Terror">Terror</option>
+        <option value="Naturaleza">Naturaleza</option>
+      </select>
+
+      <!-- Generar el contenido del ul#productos dinámicamente -->
+      <ul id="productos">
+
+      </ul>
+    </main>
+
+    <footer>
+      <ul>
+        <li>Profesor Corbalan Cristian Ariel</li>
+        <li>
+          <a href="mailto:cristian.corbalan@davinci.edu.ar" target="_blank">cristian.corbalan@davinci.edu.ar</a>
+        </li>
+        <li>Programación 1</li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
